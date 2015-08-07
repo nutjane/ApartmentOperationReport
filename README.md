@@ -40,33 +40,33 @@ use to initialize the value
 
 `String datePaid`	: the day that paid or “no” for unpaid
 
-### InvoiceCollection
+## InvoiceCollection
 keep the collection of invoices in the type of Arraylist and contain a ReadFile method to read its file
 
-#### Constructor
+### Constructor
 `public Fee(){ this.ReadFile(); } `
 use to force to ReadFile when create new object
 
-#### Method
+### Method
 `public void ReadFile()`
 
-#### Filed
+### Filed
 `List<Invoice> invoiceCollection` : Data Collection
 
-### Room
+## Room
 keep the following information and get method of these information
 - roomNo
 - roomType
 - roomPrice
 
-#### Constructor
+### Constructor
 `public Room(int roomNO, String roomType, double roomPrice)`
 use to initialize the value
 
-#### Method
+### Method
 `public int getRoomNO()` `public String getRoomType()` `public double getRoomPrice()`
 
-#### Fields 
+### Fields 
 `int roomNo`		: room number
 
 `String roomType`	: room type
@@ -74,97 +74,116 @@ use to initialize the value
 `double roomPrice`	: room price
 
 
-RoomCollection: keep the collection of invoices in the type of Arraylist and contain a ReadFile method to read its file
+## RoomCollection
+keep the collection of invoices in the type of Arraylist and contain a ReadFile method to read its file
 
-Filed
-List<Room> roomCollection : data collection
+### Constructor
+`public Fee(){ this.ReadFile(); } `
+use to force to ReadFile when create new object
 
-Constructor
-public Fee(){ this.ReadFile(); } 
-: use to force to ReadFile when create new object
+### Method
+`public void ReadFile()`
 
-List of method - public void ReadFile()
-—————————————————————————————————
+### Filed
+`List<Room> roomCollection` : data collection
 
-Ternant: keep the following information and get method of these information
-> TenantID
-> firstName
-> lastName
-> gender
-> birthDay
 
-Constructor
-public Ternant(int ternantID, String firstName, String lastName, String gender, String birthDay){
- : use to initialize the value
+## Ternant
+keep the following information and get method of these information
+- TenantID
+- firstName
+- lastName
+- gender
+- birthDay
 
-List of method - public int getTernantID()
-		public String getFirstName()
-		public String getLastName()
-		public String getGender()
-		public String getBirthDay()
-List of fields 
-int TernantID		: ID of that tenant
-String firstName	: tenant’s first name
-String lastName		: tenant’s last name
-String gender		: tenant’s gender
-String birthDay		: tenant’s birthday
-—————————————————————————————————
+### Constructor
+`public Ternant(int ternantID, String firstName, String lastName, String gender, String birthDay)`
+use to initialize the value
 
-TernantCollection: keep the collection of invoices in the type of Arraylist and contain a ReadFile method to read its file
+### Method
+`public int getTernantID()`
+`public String getFirstName()`
+`public String getLastName()`
+`public String getGender()`
+`public String getBirthDay()`
 
-Field
-List<Ternant> ternantCollection : Data collection
+### Fields 
+`int TernantID`		: ID of that tenant
 
-Constructor
-public Fee(){ this.ReadFile(); } 
-: use to force to ReadFile when create new object
+`String firstName`	: tenant’s first name
 
-List of method - public void ReadFile()
-—————————————————————————————————
+`String lastName`	: tenant’s last name
 
-Contract: keep the following information and get method of these information
-> contractNo
-> roomNo
-> tenantID1
-> tenantID2
-> tenantID3
-> checkInDate
-> checkOutDate
+`String gender`		: tenant’s gender
 
-Constructor
-public Contract(int contractNo, int roomNO, String ternantID1, String ternantID2, String ternantID3, String checkInDate, String checkOutDate){
- : use to initialize the value
+`String birthDay`	: tenant’s birthday
 
-List of method - public int getContractNO()
-		public int getRoomNO()
-		public String getTernantID1() 
-		public String getTernantID2() 
-		public String getTernantID3() 
-		public String getCheckInDate() 
-		public String getCheckOutDate()
-List of fields 
-int contractNo		: contract number
-int roomNo		: room number of that contract
-String ternantID1	: 1st tenant of that contract
-String ternantID2	: 2nd tenant of that contract
-String ternantID3	: 3rd tenant of that contract
-String checkInDate	: check in date
-String checkOutDate	: check out date or “no” for still in this apartment
-—————————————————————————————————
+## TernantCollection
+keep the collection of invoices in the type of Arraylist and contain a ReadFile method to read its file
 
-ContractCollection:  keep the collection of invoices in the type of Arraylist and contain a ReadFile method to read its file
+### Constructor
+`public Fee(){ this.ReadFile(); } `
+use to force to ReadFile when create new object
 
-Field
-List<Contract> contractCollection : Data collection
+### Method
+`public void ReadFile()`
 
-Constructor
-public Fee(){ this.ReadFile(); } 
-: use to force to ReadFile when create new object
+### Field
+`List<Ternant> ternantCollection `: Data collection
 
-List of method - public void ReadFile()
-—————————————————————————————————
+## Contract
+keep the following information and get method of these information
+- contractNo
+- roomNo
+- tenantID1
+- tenantID2
+- tenantID3
+- checkInDate
+- checkOutDate
 
-Fee: keep the following information and get method of these information
+### Constructor
+`public Contract(int contractNo, int roomNO, String ternantID1, String ternantID2, String ternantID3, String checkInDate, String checkOutDate)`
+use to initialize the value
+
+### Method 
+`public int getContractNO()`
+		`public int getRoomNO()`
+	`	public String getTernantID1() `
+	`	public String getTernantID2() `
+	`	public String getTernantID3() `
+	`	public String getCheckInDate() `
+	`	public String getCheckOutDate()`
+
+### Fields 
+`int contractNo`	: contract number
+
+`int roomNo`		: room number of that contract
+
+`String ternantID1`	: 1st tenant of that contract
+
+`String ternantID2`	: 2nd tenant of that contract
+
+`String ternantID3`	: 3rd tenant of that contract
+
+`String checkInDate`	: check in date
+
+`String checkOutDate`	: check out date or “no” for still in this apartment
+
+## ContractCollection
+keep the collection of invoices in the type of Arraylist and contain a ReadFile method to read its file
+
+### Field
+`List<Contract> contractCollection` Data collection
+
+### Constructor
+`public Fee(){ this.ReadFile(); } `
+use to force to ReadFile when create new object
+
+### Method 
+`public void ReadFile()`
+
+
+## Fee: keep the following information and get method of these information
 > electricityFee
 > waterFee
 > internetFee
