@@ -1,8 +1,12 @@
 # Apartment Operation Reporter
 
-- 5688043 Mr.Nut Janekitiworapong Section 1
-- 5688196 Ms.Peeraya Thanomboon Section 1
-- 5688260 Mr.Panupong Matankarat Section1
+A program that reads data about apartment operation and generates graphical reports using Java and DynamicReports library. This program involves reading files and generating reports. 
+
+
+This program is a second-year (sophomore) project of
+- 5688043 Mr.Nut Janekitiworapong 
+- 5688196 Ms.Peeraya Thanomboon 
+- 5688260 Mr.Panupong Matankarat
 
 ## List of Classes, Methodsand fields
 
@@ -564,8 +568,8 @@ continue in the comment of the class in the program
 
 ## How to compile and run 
 
-1) Open a “APP.java” file to compile and run our program
-2) Choose type of reports that you want
-3) Input some specific value of that report (if required)
-4) Get a report, you can print or save that report
+1. Open a “APP.java” file to compile and run our program
+2. Choose type of reports that you want
+3. Input some specific value of that report (if required)
+4. Get a report, you can print or save that report
 
