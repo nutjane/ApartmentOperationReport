@@ -3,7 +3,7 @@
 A program that reads data about apartment operation and generates graphical reports using Java and DynamicReports library. This program involves reading files and generating reports. 
 
 
-This program is a second-year (sophomore) project of
+This program is a second-year (sophomore) project of ITCS208 Object Oriented Programming deveploed by
 - 5688043 Mr.Nut Janekitiworapong 
 - 5688196 Ms.Peeraya Thanomboon 
 - 5688260 Mr.Panupong Matankarat
