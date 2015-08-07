@@ -1,47 +1,59 @@
 # Apartment Operation Reporter
 
-5688043 Mr.Nut Janekitiworapong Section 1
-5688196 Ms.Peeraya Thanomboon Section 1
-5688260	Mr.Panupong Matankarat Section1
-————————————————————————————————————————————————————————————————
-List of Classes ,Methods, and fields
+- 5688043 Mr.Nut Janekitiworapong Section 1
+- 5688196 Ms.Peeraya Thanomboon Section 1
+- 5688260 Mr.Panupong Matankarat Section1
 
-Invoice: keep the following information and get method of these information
-> contractNo
-> month
-> year
-> electricUsed
-> waterUsed
-> datePaid
+## List of Classes, Methodsand fields
 
-Constructor
-public Invoice(int contractNO, int month, int year, double electricUsed, double waterUsed, String datePaid)
- : use to initialize the value
+### Invoice
+keep the following information and get method of these information
+- contractNo
+- month
+- year
+- electricUsed
+- waterUsed
+- datePaid
 
-List of method - public int getContractNO()
-		public int getMonth()
-		public int getYear() 
-		public double getElectricUsed()
-		public double getWaterUsed()
-		public String getDatePaid()
-List of fields 
-int contractNo 		: contract number of that invoice
-int month		: month of that invoice
-int year		: year of that invoice
-double electricUsed	: amount of electricity used (units)
-double waterUsed	: amount of water used (units)
-String datePaid		: the day that paid or “no” for unpaid
-—————————————————————————————————
+#### Constructor
+`public Invoice(int contractNO, int month, int year, double electricUsed, double waterUsed, String datePaid)`
+use to initialize the value
 
-InvoiceCollection: keep the collection of invoices in the type of Arraylist and contain a ReadFile method to read its file
-Filed
-List<Invoice> invoiceCollection : Data Collection
+#### Method 
+`public int getContractNO()`
+`public int getMonth()`
+`public int getYear() `
+`public double getElectricUsed()`
+`public double getWaterUsed()`
+`public String getDatePaid()`
 
-Constructor
-public Fee(){ this.ReadFile(); } 
-: use to force to ReadFile when create new object
+#### Fields 
+`int contractNo` 	: contract number of that invoice
 
-List of method - public void ReadFile()
+`int month`		: month of that invoice
+
+`int year`		: year of that invoice
+
+`double electricUsed`	: amount of electricity used (units)
+
+`double waterUsed`	: amount of water used (units)
+
+`String datePaid`	: the day that paid or “no” for unpaid
+
+
+
+### InvoiceCollection
+keep the collection of invoices in the type of Arraylist and contain a ReadFile method to read its file
+
+#### Filed
+`List<Invoice> invoiceCollection` : Data Collection
+
+#### Constructor
+`public Fee(){ this.ReadFile(); } `
+use to force to ReadFile when create new object
+
+#### List of method
+`public void ReadFile()`
 —————————————————————————————————
 
 Room: keep the following information and get method of these information
