@@ -183,39 +183,43 @@ use to force to ReadFile when create new object
 `public void ReadFile()`
 
 
-## Fee: keep the following information and get method of these information
-> electricityFee
-> waterFee
-> internetFee
+## Fee
+keep the following information and get method of these information
+- electricityFee
+- waterFee
+- internetFee
 
-Constructor
-public Fee(){ this.ReadFile(); } 
-: use to force to ReadFile when create new Fee object
+### Constructor
+`public Fee(){ this.ReadFile(); } `
+use to force to ReadFile when create new Fee object
 
-List of method - public double getElectricFee() 
-		public double getWaterFee() 
-		public double getInternetFee()
-		public void ReadFile()
-List of fields 
-double electricityFee	: electricity fee (baht/unit)
-double waterFee		: water fee (baht/unit)
-double internetFee	: internet fee (baht/month)
-—————————————————————————————————
+### Method 
+`public double getElectricFee() `
+	`	public double getWaterFee() `
+	`	public double getInternetFee()`
+	`	public void ReadFile()`
+### Fields 
+`double electricityFee`	: electricity fee (baht/unit)
 
-ReportContractAll :
+`double waterFee`	: water fee (baht/unit)
 
-Constructor
-public ReportContractAll()
-: use to force to go into build() method
+`double internetFee`	: internet fee (baht/month)
 
-List of method
-- build
+
+## ReportContractAll 
+
+### Constructor
+`public ReportContractAll()`
+use to force to go into build() method
+
+### Method
+- `build`
 	use to create this report set text and data
 	- reportDesign set style of report
 	- title create a logo and text
 	- page footer show number of page
 	- setDataSource set data from JRDataSource createDataSource
-- JRDataSource createDataSource
+- `JRDataSource createDataSource`
         use to keep and set data
 	- loop for check data, use all data
 	- keep people data to string variable use if to check
@@ -223,22 +227,21 @@ List of method
 		- second and third if check ter2,ter3 (ter2,ter3 are not required)
 	- dataSource.add use to keep data to return parameters 
 	  to ReportContractAll and show table
-—————————————————————————————————
 
-ReportContractActive :
+## ReportContractActive 
 
-Constructor
-public ReportContractActive()
-: use to force to go into build() method
+### Constructor
+`public ReportContractActive()`
+use to force to go into build() method
 
-List of method
-- build
+###Method
+- `build`
 	use to create this report, set text and data
 	- reportDesign set style of report
 	- title create a logo and text
 	- page footer show number of page
 	- setDataSource set data from JRDataSource createDataSource
-- JRDataSource createDataSource
+- `JRDataSource createDataSource`
         use to keep and set data
 	- loop for check data, and if checkOutDate equals “no” (active)
 	- keep people data to string variable use if to check
@@ -246,22 +249,21 @@ List of method
 		- second and third if check ter2,ter3 (ter2,ter3 are not required)
 	- dataSource.add use to keep data to return parameters 
 	  to ReportContractAll and show table
-—————————————————————————————————
 
-ReportContractTerminated :
+## ReportContractTerminated :
 
-Constructor
-public ReportContractTerminated()
-: use to force to go into build() method
+### Constructor
+`public ReportContractTerminated()`
+use to force to go into build() method
 
-List of method
-- build
+### Method
+- `build`
 	use to create this report set text and data
 	- reportDesign set style of report
 	- title create a logo and text
 	- page footer show number of page
 	- setDataSource set data from JRDataSource createDataSource
-- JRDataSource createDataSource
+- `JRDataSource createDataSource`
         use to keep and set data
 	- loop for check data, and if checkOutDate not equals “no”
 	- keep people data to string variable use if to check
@@ -269,119 +271,119 @@ List of method
 		- second and third if check ter2,ter3 (ter2,ter3 are not required)
 	- dataSource.add use to keep data to return parameters 
 	  to ReportContractAll and show table
-—————————————————————————————————
 
-ReportInvoiceAll :
+## ReportInvoiceAll 
 
-Constructor
-public ReportInvoiceAll()
-: use to force to go into build() method
+### Constructor
+`public ReportInvoiceAll()`
+use to force to go into build() method
 
-List of method
-- build
+### Method
+- `build`
 	use to create this report set text and data
 	- reportDesign set style of report
 	- title create a logo and text
 	- page footer show number of page
 	- setDataSource set data from JRDataSource createDataSource
-- JRDataSource createDataSource
+- `JRDataSource createDataSource`
         use to keep and set data
 	- create collection data
 	- use for keep data number to print on table
 	- return data to build
-—————————————————————————————————
 
-ReportInvoicePaid :
+## ReportInvoicePaid
 
-Constructor
-public ReportInvoicePaid()
-: use to force to go into build() method
+### Constructor
+`public ReportInvoicePaid()`
+use to force to go into build() method
 
-List of method
-- build
+### Method
+- `build`
 	use to create this report set text and data
 	- reportDesign set style of report
 	- title create a logo and text
 	- page footer show number of page
 	- setDataSource set data from JRDataSource createDataSource
-- JRDataSource createDataSource
+- `JRDataSource createDataSource`
         use to keep and set data
 	- create collection data
 	- use if to check datePaid if not equals "no" 
 	- if true use for keep data number to print on table
 	- return data to build
-—————————————————————————————————
 
-ReportInvoiceUnpaid
+## ReportInvoiceUnpaid
 
-Constructor
-public ReportInvoiceUnpaid()
-: use to force to go into build() method
+### Constructor
+`public ReportInvoiceUnpaid()`
+use to force to go into build() method
 
-- build
+### Method
+- `build`
 	use to create this report set text color and data
 	- reportDesign set style of report
 	- title create a logo and text
 	- page footer show number of page
 	- setDataSource set data from JRDataSource createDataSource
-- JRDataSource createDataSource
+- `JRDataSource createDataSource`
         use to keep and set data
 	- create collection data
 	- use if to check datePaid if equal "no" 
 	- if true use for keep data number to print on table
 	- return data to build
-—————————————————————————————————
-
-ReportUsedElectricity
-
-Constructor
-public ReportUsedElectricity(int startMonth, int startYear, int endMonth, int endYear)
-: use to force to go into build() method with given interval (time)
 
 
-- build
+## ReportUsedElectricity
+
+### Constructor
+`public ReportUsedElectricity(int startMonth, int startYear, int endMonth, int endYear)`
+use to force to go into build() method with given interval (time)
+
+### Method
+- `build`
 	use to create this report set text and data
 	- reportDesign set style of report
 	- title create a logo and text
 	- page footer show number of page
 	- setDataSource set data from JRDataSource createDataSource
-- JRDataSource createDataSource
+- `JRDataSource createDataSource`
         use to keep and set data
 	- use while to find how many months in this interval
 	- use for to keep data each month then use dataSource.add to check month to
 	  run in loop and return data to bulid
-- Date toDate
+- `Date toDate`
 	- set time to return
-—————————————————————————————————
 
-ReportUsedWater
+## ReportUsedWater
 
-Constructor
-public ReportUsedWater(int startMonth, int startYear, int endMonth, int endYear)
-: use to force to go into build() method with given interval (time)
+### Constructor
+`public ReportUsedWater(int startMonth, int startYear, int endMonth, int endYear)`
+use to force to go into build() method with given interval (time)
 
-- build
+### Method
+- `build`
 	use to create this report set text and data
 	- reportdesign set style of report
 	- title create a logo and text
 	- page footer show number of page
 	- setDataSource set data from JRDataSource createDataSource
-- JRDataSource createDataSource
+- `JRDataSource createDataSource`
         use to keep and set data
 	- use while to find how many months in this interval
 	- use for to keep data each month then use dataSource.add to check month to
 	  run in loop and return data to bulid
-- Date toDate
+- `Date toDate`
 	- set time to return	
-—————————————————————————————————	
 
-APP : The main menu window of the program which can choose to the following window
+
+## APP 
+The main menu window of the program which can choose to the following window
    - the contract report window
    - the invoice report window
    - the usage water report window
    - the usage electricity report window
 
-List of method - [JFrame] (for set the window frame)
+### Method 
+		- [JFrame] (for set the window frame)
                  setType (for set the window type)
                  setForeground (for set the color of text in title bar)
                  setFont (for set the font of text in title bar)
@@ -406,14 +408,16 @@ List of method - [JFrame] (for set the window frame)
                  setBounds (for set the size of the button)
 
 continue in the comment of the class in the program
-—————————————————————————————————
 
-APPC : The contract window which can choose to link to the following contract report
+
+## APPC 
+The contract window which can choose to link to the following contract report
    - the active contract report 
    - the terminated contract report
    - both of the contract report
 
-List of method - [JFrame] (for set the window frame)
+### Method
+		- [JFrame] (for set the window frame)
                  setType (for set the window type)
                  setForeground (for set the color of text in title bar)
                  setFont (for set the font of text in title bar)
@@ -438,14 +442,16 @@ List of method - [JFrame] (for set the window frame)
                  setBounds (for set the size of the button)
 
 continue in the comment of the class in the program
-—————————————————————————————————
 
-APPI : The invoice window which can choose to link to the following contract report
+
+## APPI 
+The invoice window which can choose to link to the following contract report
    - the paid invoice report 
    - the unpaid invoice report
    - both of the invoice report
 
-List of method - [JFrame] (for set the window frame)
+### Method
+		- [JFrame] (for set the window frame)
                  setType (for set the window type)
                  setForeground (for set the color of text in title bar)
                  setFont (for set the font of text in title bar)
@@ -470,53 +476,15 @@ List of method - [JFrame] (for set the window frame)
                  setBounds (for set the size of the button)
 
 continue in the comment of the class in the program
-—————————————————————————————————
 
-APPE : The usage electricity window which can link to the usage electricity report that according to
+
+## APPE
+The usage electricity window which can link to the usage electricity report that according to
    - the start date 
    - the lastest date
 
-List of method - [JFrame] (for set the window frame)
-                 setType (for set the window type)
-                 setForeground (for set the color of text in title bar)
-                 setFont (for set the font of text in title bar)
-		 setIconImage (for set the icon image in title bar)
-                 setDefaultCloseOperation (for set the close option of the window)
-                 setBounds (for set the size of the window frame)
-	      
-	       - [Jlabel] (for set the sentence and picture)
-                 setForeground (for set the color of text )
-                 setFont (for set the color of text )
-                 setIcon (for set the image in frame)
-                 setHorizontalAlignment (for set the position of text or picture)
-
-	       - [JButton] (for set the button)
-                 setToolTipText (for give the user what the button is)
-                 addActionListener (for give an action to the button)
-		 setForeground (for set the color of text )
-                 setFont (for set the color of text )
-                 setBackground (for set the color of the box)
-                 setHorizontalAlignment (for set the position of text or picture)
-                 setBounds (for set the size of the button)
-
-
-               - [JComboBox] (for set the box that can choose the item)
-                 setToolTipText (for give the user what the button is)
-                 setModel (for set the list that is the choice that you have to choose)
-		 addActionListener (for give an action to the button)
-		 setForeground (for set the color of text )
-                 setFont (for set the color of text )
-                 setBackground (for set the color of the box)
-                 setBounds (for set the size of the box)
-
-continue in the comment of the class in the program
-—————————————————————————————————
-
-APPW : The usage water window which can link to the usage water report that according to
-   - the start date 
-   - the lastest date
-
-List of method - [JFrame] (for set the window frame)
+### Method
+		- [JFrame] (for set the window frame)
                  setType (for set the window type)
                  setForeground (for set the color of text in title bar)
                  setFont (for set the font of text in title bar)
@@ -551,11 +519,53 @@ List of method - [JFrame] (for set the window frame)
 
 continue in the comment of the class in the program
 
-————————————————————————————————————————————————————————————————
-How to compile and run 
+
+## APPW
+The usage water window which can link to the usage water report that according to
+   - the start date 
+   - the lastest date
+
+### Method
+		- [JFrame] (for set the window frame)
+                 setType (for set the window type)
+                 setForeground (for set the color of text in title bar)
+                 setFont (for set the font of text in title bar)
+		 setIconImage (for set the icon image in title bar)
+                 setDefaultCloseOperation (for set the close option of the window)
+                 setBounds (for set the size of the window frame)
+	      
+	       - [Jlabel] (for set the sentence and picture)
+                 setForeground (for set the color of text )
+                 setFont (for set the color of text )
+                 setIcon (for set the image in frame)
+                 setHorizontalAlignment (for set the position of text or picture)
+
+	       - [JButton] (for set the button)
+                 setToolTipText (for give the user what the button is)
+                 addActionListener (for give an action to the button)
+		 setForeground (for set the color of text )
+                 setFont (for set the color of text )
+                 setBackground (for set the color of the box)
+                 setHorizontalAlignment (for set the position of text or picture)
+                 setBounds (for set the size of the button)
+
+
+               - [JComboBox] (for set the box that can choose the item)
+                 setToolTipText (for give the user what the button is)
+                 setModel (for set the list that is the choice that you have to choose)
+		 addActionListener (for give an action to the button)
+		 setForeground (for set the color of text )
+                 setFont (for set the color of text )
+                 setBackground (for set the color of the box)
+                 setBounds (for set the size of the box)
+
+continue in the comment of the class in the program
+
+
+## How to compile and run 
 
 1) Open a “APP.java” file to compile and run our program
 2) Choose type of reports that you want
 3) Input some specific value of that report (if required)
 4) Get a report, you can print or save that report
-————————————————————————————————————————————————————————————————
+
