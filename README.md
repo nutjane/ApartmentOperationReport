@@ -19,7 +19,7 @@ keep the following information and get method of these information
 `public Invoice(int contractNO, int month, int year, double electricUsed, double waterUsed, String datePaid)`
 use to initialize the value
 
-#### Method 
+#### Methods 
 `public int getContractNO()`
 `public int getMonth()`
 `public int getYear() `
@@ -40,39 +40,39 @@ use to initialize the value
 
 `String datePaid`	: the day that paid or “no” for unpaid
 
-
-
 ### InvoiceCollection
 keep the collection of invoices in the type of Arraylist and contain a ReadFile method to read its file
-
-#### Filed
-`List<Invoice> invoiceCollection` : Data Collection
 
 #### Constructor
 `public Fee(){ this.ReadFile(); } `
 use to force to ReadFile when create new object
 
-#### List of method
+#### Method
 `public void ReadFile()`
-—————————————————————————————————
 
-Room: keep the following information and get method of these information
-> roomNo
-> roomType
-> roomPrice
+#### Filed
+`List<Invoice> invoiceCollection` : Data Collection
 
-Constructor
-public Room(int roomNO, String roomType, double roomPrice){
- : use to initialize the value
+### Room
+keep the following information and get method of these information
+- roomNo
+- roomType
+- roomPrice
 
-List of method - public int getRoomNO()
-		public String getRoomType()
-		public double getRoomPrice()
-List of fields 
-int roomNo		: room number
-String roomType		: room type
-double roomPrice	: room price
-—————————————————————————————————
+#### Constructor
+`public Room(int roomNO, String roomType, double roomPrice)`
+use to initialize the value
+
+#### Method
+`public int getRoomNO()` `public String getRoomType()` `public double getRoomPrice()`
+
+#### Fields 
+`int roomNo`		: room number
+
+`String roomType`	: room type
+
+`double roomPrice`	: room price
+
 
 RoomCollection: keep the collection of invoices in the type of Arraylist and contain a ReadFile method to read its file
 
