@@ -1,0 +1,6 @@
+1,James,Green,M,28-2-1989
+2,Phon,Patcharaporn,M,15-3-1980
+3,Praphai,Karunwong,F,20-5-1982
+4,Nut,Janekitiworapong,M,28-02-1955
+5,Peeraya,Thanomboon,F,20-01-1995
+6,Panupont,Matankarat,M,4-04-1995
